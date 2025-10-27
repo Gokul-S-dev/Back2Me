@@ -1,4 +1,4 @@
-**How Setup**
+**How to Setup**
 
 ### Clone this repo
 #### cd frontend
