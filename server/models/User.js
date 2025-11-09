@@ -10,5 +10,6 @@ const userSchema = new mongoose.Schema(
     },
     { timestamps: true }
 );
-
+                               //Collection Name
 export default mongoose.model("User", userSchema);
+                                        //Schema Name is defined above

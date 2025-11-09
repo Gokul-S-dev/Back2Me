@@ -25,3 +25,13 @@ export const createIteam = async(req,res)=>{
     }
 }
 
+export const getIteams = async(req,res)=>{
+    try{
+        const iteams = await Iteam.find();
+        res.json(iteams);
+    }catch(err){
+        res.status(500).json({message:err.message})
+        
+    }
+}
+
