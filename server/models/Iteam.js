@@ -1,5 +1,4 @@
 import mongoose from "mongoose";
-import { ref } from "process";
 
 const iteamSchema = new mongoose.Schema(
     {
@@ -8,10 +7,10 @@ const iteamSchema = new mongoose.Schema(
     image:{type:String},
     location:{type:String},
     status:{type:String , enum:["lost","found"],require:true},
-    date:{type: Date ,default:Date.now},
-    user:{type: mongoose.Schema.Types.ObjectId ,ref:"User"},
+    date:{type: Date ,default:Date.now}
 },
 {timestamps:true}
 );
-
+                               //collection name
 export default mongoose.model("Iteam",iteamSchema);
+                                          //schema name
