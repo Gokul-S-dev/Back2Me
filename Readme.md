@@ -1,8 +1,9 @@
 **How to Setup**
 
 ### Clone this repo
-#### cd frontend
-``` js
+
+``` javascript
+ cd frontend
  npm install
  npm run dev
 ```
